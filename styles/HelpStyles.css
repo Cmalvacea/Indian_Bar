@@ -1,0 +1,21 @@
+div {
+  margin: auto;
+  margin-top: 5%;
+  width: 70%;
+  text-align: center;
+  padding-bottom: 20px;
+  -webkit-box-shadow: 4px 4px 7px gainsboro;
+          box-shadow: 4px 4px 7px gainsboro;
+}
+
+div h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+div article {
+  margin: auto;
+  text-align: left;
+  width: 90%;
+  font-family: 'Raleway', sans-serif;
+}
+/*# sourceMappingURL=HelpStyles.css.map */

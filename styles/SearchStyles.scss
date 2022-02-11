@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(241, 241, 241);
+}
+
+.Query_Bar_Container{
+    margin: auto;
+    margin-top: 10%;
+    width: 80%;
+    form {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 90% 10%;
+        input {
+            border: none;
+            width: 100%;
+            padding: 20px;
+            outline: none;
+            box-shadow: 0px 5px 10px gainsboro;
+        }
+
+        button {
+            background-color: orangered;
+            border: none;
+            ion-icon {
+                font-size: 2em;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+.Top_Queries {
+    width: 80%;
+    margin: auto;
+    margin-top: 15%;
+
+    .Top_Queries_Title {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Quicksand', sans-serif;
+        div {
+            border: 1px solid rgb(0, 0, 0);
+            width: 80%;
+        }
+    }
+
+    .Top_Queries_Grid {
+        display:grid;
+        grid-template-columns: repeat(3, 33%);
+        gap: 10px;
+        div {
+            height: 150px;
+            border-radius: 6px;
+            box-shadow: 2px 2px 4px gainsboro;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+}

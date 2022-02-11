@@ -1,0 +1,175 @@
+body {
+    margin: 0px;
+}
+
+.First_Navigation {
+    top: 0%;
+    width: 100%;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px rgb(197, 197, 197);
+
+    h1 {
+        a {
+            text-decoration: none;
+            color: black;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+
+    div {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+
+        a {
+            padding-left: 10px;
+            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(105, 105, 105);
+            font-weight: 700;
+            font-size: 17px;
+            padding: 10px;
+            border-radius: 35px;
+            font-family: sans-serif;
+
+            ion-icon {
+                font-size: 2em;
+                padding-right: 8px;
+            }
+        }
+
+        a:hover {
+            background-color: gainsboro;
+        }
+
+    }
+
+}
+
+
+
+footer {
+    padding-top: 10px;
+    margin-top: 10%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: white;
+
+    .Misc1 {
+        width: 90%;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        border-top: 1px solid rgb(196, 196, 196);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .FAQ_Sect {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            gap: 40px;
+
+            h4 {
+                font-size: 15px;
+                color: rgb(165, 165, 165);
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: left;
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: gray;
+                }
+
+                a:hover {
+                    color: orangered;
+                }
+            }
+        }
+
+        .Footer_Logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .Misc2{
+        background-color: rgb(46, 46, 46);
+        display: grid;
+        grid-template-columns: 40% 50%;
+
+
+        .Categories {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                text-align: left;
+
+                h4 {
+                    font-size: 15px;
+                    color: rgb(165, 165, 165);
+                }
+
+                a {
+                    text-decoration: none;
+                    color: whitesmoke;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 830px) {
+    .First_Navigation {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            display: none;
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .Misc1, .Misc2 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+
+            .FAQ_Sect, .Categories {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,101 @@
+
+
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.Product_Overview {
+    margin: auto;
+    margin-top: 8%;
+    width: 85%;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+    ion-icon {
+        font-size: 1.5em;
+        color: green;
+    }
+
+    .Product_Img {
+        height: 350px;
+        width: 100%;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+
+
+    .Product_Det { 
+        div {
+            h2 {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                font-family: 'Raleway', sans-serif;
+                color: black;
+            }
+        }
+    }
+
+}
+
+.Recomendations {
+    margin: auto;
+    margin-bottom: 10%;
+    width: 70%;
+    text-align: center;
+
+    .Recomendations_Title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        div {
+            border: 1px solid black;
+            width: 40%;
+        }
+    }
+
+    h2 {
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    .Suggested_Prod {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+
+        div {
+            height: 200px;
+            border: 1px solid black;
+        }
+    }
+}
+
+
+@media(max-width: 830px) {
+    .Product_Overview {
+        margin-top: 25%;
+        grid-template-columns: 100%;
+    }
+
+    .Recomendations {
+        display: grid;
+        grid-template-columns: 100%;
+        .Suggested_Prod {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div {
+                width: 90%;
+                height: 200px;
+            }
+
+        }
+    }
+}

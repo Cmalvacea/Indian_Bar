@@ -1,0 +1,190 @@
+body {
+  margin: 0px;
+}
+
+.Slide {
+  margin: auto;
+  margin-top: 10%;
+  width: 90%;
+  border: 1px solid black;
+  height: 300px;
+}
+
+.Product_Filter {
+  font-family: sans-serif;
+  border-bottom: 1px solid gainsboro;
+  margin: auto;
+  margin-top: 5%;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Product_Filter .Filter_Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.Product_Filter .Filter_Buttons button {
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 15px;
+  color: gray;
+  background: none;
+  cursor: pointer;
+}
+
+.Product_Filter .Filter_Buttons #ListFilter {
+  font-size: 18px;
+  border: none;
+  color: black;
+}
+
+.Product_Filter .Filter_Buttons #ListFilter ion-icon {
+  font-size: 1.8em;
+}
+
+.Product_Panel {
+  margin: auto;
+  width: 85%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  padding-top: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.Product_Panel .Product_Class_List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  row-gap: 35px;
+  margin-top: 10%;
+}
+
+.Product_Panel .Product_Class_List a {
+  text-decoration: none;
+  font-weight: 700;
+  color: gray;
+}
+
+.Product_Panel .Product_Class_List a:hover {
+  border-bottom: 2px solid orangered;
+  font-size: 1.2em;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Title {
+  font-size: 15px;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  font-family: sans-serif;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Grid .Product_Item {
+  margin-top: 2%;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 8px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Grid .Product_Item .Product_Img {
+  width: 100%;
+  height: 210px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Grid .Product_Item .Product_Details {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Product_Panel .Product_Display .Product_Categorie_Grid .Product_Item .Product_Details a {
+  font-family: sans-serif;
+  font-weight: bold;
+  background: #ee9e52;
+  background: -webkit-gradient(linear, left top, right top, from(#ee9e52), color-stop(40%, #e65b1b), color-stop(41%, #e65b1b));
+  background: linear-gradient(90deg, #ee9e52 0%, #e65b1b 40%, #e65b1b 41%);
+  padding: 15px;
+  border-radius: 25px;
+  text-align: center;
+  width: 110px;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 830px) {
+  .Slide, .Product_Filter {
+    display: none;
+  }
+  .Product_Class_List {
+    display: none !important;
+  }
+  .Product_Panel {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .Product_Categorie_Grid {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
+  .Product_Categorie_Grid .Product_Item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .Product_Categorie_Grid .Product_Item .Product_Details {
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=indexstyles.css.map */

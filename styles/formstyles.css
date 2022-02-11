@@ -1,0 +1,62 @@
+body {
+  background-color: #eeeeee;
+}
+
+.Form_Container {
+  border: 2px solid #f59547;
+  border-radius: 10px;
+  width: 25%;
+  margin: auto;
+  margin-top: 12%;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: white;
+  -webkit-box-shadow: 10px 5px 5px #b3b3b3;
+          box-shadow: 10px 5px 5px #b3b3b3;
+}
+
+.Form_Container a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.Form_Container form {
+  margin: auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.Form_Container form button {
+  width: 50%;
+  color: white;
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 8px;
+  background: #c84539;
+  background: -webkit-gradient(linear, left top, right top, from(#c84539), color-stop(46%, #f0550e), color-stop(88%, #f4963e));
+  background: linear-gradient(90deg, #c84539 0%, #f0550e 46%, #f4963e 88%);
+}
+
+.Form_Container form button:hover {
+  cursor: pointer;
+}
+
+.Form_Container form input {
+  width: 90%;
+  padding: 10px;
+  border: 1.5px solid orangered;
+  border-radius: 7px;
+  outline: none;
+}
+/*# sourceMappingURL=formstyles.css.map */

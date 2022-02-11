@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+}
+
+
+.Slide {
+    margin: auto;
+    margin-top: 10%;
+    width: 90%;
+    border:1px solid black;
+    height: 300px;
+}
+
+.Product_Filter {
+    font-family: sans-serif;
+    border-bottom: 1px solid gainsboro;
+    margin: auto;
+    margin-top: 5%;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+
+    .Filter_Buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 20%;
+
+        button {
+            border: 1px solid black;
+            border-radius: 7px;
+            font-size: 15px;
+            color: gray;
+            background:none;
+            cursor: pointer;
+        }
+
+        #ListFilter {
+            font-size: 18px;
+            border: none;
+            color: black;
+            ion-icon {
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+
+.Product_Panel {
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+
+    .Product_Class_List {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        row-gap: 35px;
+        margin-top: 10%;
+        a {
+            text-decoration: none;
+            font-weight: 700;
+            color: gray;
+        }
+
+        a:hover {
+            border-bottom: 2px solid orangered;
+            font-size: 1.2em;
+        }
+    }
+
+    .Product_Display {
+
+        .Product_Categorie_Title {
+            font-size: 15px;
+        }
+
+
+        .Product_Categorie_Grid{
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            font-family: sans-serif;
+
+            .Product_Item {
+                margin-top: 2%;
+                border-bottom: 1px solid gainsboro;
+                padding-bottom: 8px;
+                font-family: 'Quicksand', sans-serif;
+
+                .Product_Img {
+                    width: 100%;
+                    height: 210px;
+                    border: 1px solid black;
+                    border-radius: 8px;
+                }
+
+                .Product_Details {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    a {
+                        font-family: sans-serif;
+                        font-weight: bold;
+                        background: rgb(238,158,82);
+                        background: linear-gradient(90deg, rgba(238,158,82,1) 0%, rgba(230,91,27,1) 40%, rgba(230,91,27,1) 41%);
+                        padding: 15px;
+                        border-radius: 25px;
+                        text-align: center;
+                        width: 110px;
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 830px) {
+    .Slide, .Product_Filter {
+        display: none;
+    }
+
+    .Product_Class_List {
+        display: none !important;
+    }
+
+    .Product_Panel {
+        grid-template-columns: 100%;
+    }
+
+    .Product_Categorie_Grid {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+
+        .Product_Item {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            .Product_Details {
+                align-items: inherit;
+                flex-direction: column;
+            }
+        }
+    }
+}

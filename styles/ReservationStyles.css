@@ -1,0 +1,120 @@
+body {
+  margin: 0%;
+}
+
+.Form_Container {
+  -webkit-box-shadow: 7px 7px 5px gainsboro;
+          box-shadow: 7px 7px 5px gainsboro;
+  margin: auto;
+  margin-top: 5%;
+  width: 82%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 35% 65%;
+      grid-template-columns: 35% 65%;
+  border-radius: 5px;
+}
+
+.Form_Container .Time_Details {
+  background-color: #d4431f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: inherit;
+}
+
+.Form_Container .Time_Details article {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border: 1px dotted white;
+  color: white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Form_Container .Time_Details article div {
+  margin: auto;
+  width: 90%;
+  border: 1px solid white;
+}
+
+.Form_Container .Res_Details .Res_Details_Title {
+  text-align: center;
+  padding: 10px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.Form_Container .Res_Details .Form_Element_Container {
+  padding: 10px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.Form_Container .Res_Details form {
+  padding: 25px;
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 19px;
+}
+
+.Form_Container .Res_Details form input {
+  padding: 10px;
+  width: 40%;
+}
+
+.Form_Container .Res_Details form button {
+  width: 55%;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #d4431f;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  border-radius: 10px;
+  border: none;
+}
+
+@media (max-width: 830px) {
+  .Form_Container {
+    width: 90%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .Form_Container .Time_Details {
+    padding-bottom: 40px;
+  }
+  .Form_Container .Time_Details article {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=ReservationStyles.css.map */

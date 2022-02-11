@@ -1,0 +1,87 @@
+body {
+  background-color: #f1f1f1;
+}
+
+.Query_Bar_Container {
+  margin: auto;
+  margin-top: 10%;
+  width: 80%;
+}
+
+.Query_Bar_Container form {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 90% 10%;
+      grid-template-columns: 90% 10%;
+}
+
+.Query_Bar_Container form input {
+  border: none;
+  width: 100%;
+  padding: 20px;
+  outline: none;
+  -webkit-box-shadow: 0px 5px 10px gainsboro;
+          box-shadow: 0px 5px 10px gainsboro;
+}
+
+.Query_Bar_Container form button {
+  background-color: orangered;
+  border: none;
+}
+
+.Query_Bar_Container form button ion-icon {
+  font-size: 2em;
+  color: white;
+}
+
+.Top_Queries {
+  width: 80%;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.Top_Queries .Top_Queries_Title {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.Top_Queries .Top_Queries_Title div {
+  border: 1px solid black;
+  width: 80%;
+}
+
+.Top_Queries .Top_Queries_Grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  gap: 10px;
+}
+
+.Top_Queries .Top_Queries_Grid div {
+  height: 150px;
+  border-radius: 6px;
+  -webkit-box-shadow: 2px 2px 4px gainsboro;
+          box-shadow: 2px 2px 4px gainsboro;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=SearchStyles.css.map */

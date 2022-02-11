@@ -1,0 +1,102 @@
+body {
+    margin: 0%;
+}
+
+.Form_Container {
+    box-shadow: 7px 7px 5px gainsboro;
+    margin: auto;
+    margin-top: 5%;
+    width: 82%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    border-radius: 5px;
+
+    .Time_Details {
+        background-color: rgb(212, 67, 31);
+        display: flex;
+        align-items: center;
+        border-radius: inherit;
+
+        article {
+            margin: auto;
+            width: 90%;
+            height: 90%;
+            border: 1px dotted white;
+            color: white;
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+
+            div {
+                margin: auto;
+                width: 90%;
+                border: 1px solid white;
+            }
+        }
+    }
+
+    .Res_Details {
+        .Res_Details_Title {
+            text-align: center;
+            padding: 10px;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 400;
+        }
+
+        .Form_Element_Container {
+            padding: 10px;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        form {
+            padding: 25px;
+            margin: auto;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 19px;
+
+
+            input {
+            padding: 10px;
+                width: 40%;
+            }
+
+            button {
+            width: 55%;
+            padding: 5px;
+            font-size: 20px;
+            background-color: rgb(212, 67, 31);
+            color: white;
+            font-family: 'Quicksand', sans-serif;
+            border-radius: 10px;
+            border: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 830px) {
+
+
+    .Form_Container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+
+        .Time_Details {
+            padding-bottom: 40px;
+
+            article {
+                font-size: 16px;
+            }
+        }
+    }
+}
